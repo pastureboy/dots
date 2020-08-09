@@ -40,9 +40,9 @@ hi TabLineSel ctermbg=4 ctermfg=0
 hi TermCursorNC ctermbg=1 ctermfg=1
 hi VertSplit ctermbg=8 ctermfg=0
 hi Title ctermbg=NONE ctermfg=4
-hi CursorLine ctermbg=1 ctermfg=0
-hi LineNr ctermbg=NONE ctermfg=9
-hi CursorLineNr ctermbg=0 ctermfg=8
+hi CursorLine ctermbg=0 ctermfg=NONE cterm=NONE
+hi LineNr ctermbg=NONE ctermfg=2
+hi CursorLineNr ctermbg=1 ctermfg=0
 hi helpLeadBlank ctermbg=NONE ctermfg=7
 hi helpNormal ctermbg=NONE ctermfg=7
 hi Visual ctermbg=0 ctermfg=15 cterm=reverse term=reverse
@@ -72,7 +72,7 @@ hi Question ctermbg=NONE ctermfg=4
 hi WarningMsg ctermbg=1 ctermfg=0
 hi Cursor ctermbg=1 ctermfg=0
 hi Structure ctermbg=1 ctermfg=5
-hi CursorColumn ctermbg=8 ctermfg=7
+hi CursorColumn ctermbg=1 ctermfg=1
 hi ModeMsg ctermbg=NONE ctermfg=7
 hi SpellBad ctermbg=NONE ctermfg=1 cterm=underline
 hi SpellCap ctermbg=NONE ctermfg=4 cterm=underline

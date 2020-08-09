@@ -1,0 +1,107 @@
+@import 'file:///home/jujey/.cache/wal/colors.css';
+@font-face {
+    font-family: "Roboto";
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: var(--background);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.prompt {
+    font-family: Roboto;
+    color: var(--color1);
+}
+
+.prompt~.prompt {
+    padding: 1.5rem 0 0.3125rem;
+}
+
+span {
+    color: var(--color1);
+}
+
+h1 {
+    display: inline;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--color4);
+}
+
+.tree > ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 2.5rem;
+}
+
+li {
+    position: relative;
+}
+
+li::before, li::after {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+}
+
+li::before {
+    border-top: var(--branch);
+    top: 0.75rem;
+    width: 0.5rem;
+}
+
+li::after {
+    border-left: var(--branch);
+    height: 100%;
+    top: 0.25rem;
+}
+
+li:last-child::after {
+    height: 0.5rem;
+}
+
+a {
+    font-family: Roboto;
+    font-size: 1rem;
+    color: var(--color2);
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: var(--foreground);
+    background: var(--background);
+}
+
+form h1 {
+    color: var(--color4);
+    padding-left: 0.125rem;
+}
+
+input {
+    font-family: Roboto;
+    font-size: 1rem;
+    color: var(--foreground);
+    background-color: var(--background);
+    border: dotted;
+    border-width: 2px;
+    border-top-color: var(--color2);
+    border-right-color: var(--color2);
+    border-bottom-color: var(--color2);
+    border-left-color: var(--color2);
+}

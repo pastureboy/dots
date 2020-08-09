@@ -1,0 +1,72 @@
+#!/bin/bash
+
+file=~/.urxvt/ext/font-size
+start=~/Documents/startpage/
+tree=~/Documents/treepage/
+
+sudo pacman -S git bspwm sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser rxvt-unicode w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+
+sudo chown jujey /usr/bin/
+sudo chown jujey /usr/share/nvim/runtime/colors/
+
+cp -r ~/dots/home/jujey/config/bspwm ~/.config/
+cp -r ~/dots/home/jujey/config/nvim ~/.config/
+cp -r ~/dots/home/jujey/config/picom ~/.config/
+cp -r ~/dots/home/jujey/config/polybar ~/.config/
+cp -r ~/dots/home/jujey/config/qutebrowser ~/.config/
+cp -r ~/dots/home/jujey/config/sxhkd ~/.config/
+cp -r ~/dots/home/jujey/config/mimeapps.list ~/.config/
+cp -r ~/dots/home/jujey/.bashrc ~/
+cp -r ~/dots/home/jujey/dmen.sh ~/
+cp -r ~/dots/home/jujey/lock ~/
+cp -r ~/dots/home/jujey/.vimrc ~/
+cp -r ~/dots/home/jujey/.Xdefaults ~/
+
+if [ -f $start ]; then
+	rm -rf ~/Documents/startpage/
+	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
+	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
+else
+	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
+	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
+fi
+
+if [ -f $tree ]; then
+	rm -rf ~/Documents/treepage/
+	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
+	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
+else
+	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
+	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
+fi
+
+cp -r ~/dots/home/jujey/Pictures/me.jpg ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/me2.jpg ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/sea.png ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictures/
+
+if [ -f $file ]; then
+	rm -rf ~/.urxvt/
+	mkdir ~/.urxvt/
+	cp -r ~/dots/home/jujey/urxvt/ext ~/.urxvt/
+else
+	mkdir ~/.urxvt/
+	cp -r ~/dots/home/jujey/urxvt/ext ~/.urxvt/
+fi
+
+cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
+cp ~/dots/usr/bin/borders /usr/bin/
+cp ~/dots/usr/bin/fff /usr/bin/
+
+sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff
+
+cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
+rm -rf ~/opt/
+
+yay -S pywal-git i3lock-color-git corrupter-git xwinwrap-git
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+printf "\nType ':PlugInstall' when opening vim for the first time.\n\n"

@@ -21,9 +21,9 @@ settings:
         '9': tab-focus 9
         <Ctrl+Left>: back
         <Ctrl+Right>: forward
+        <Ctrl+h>: history
         <Ctrl+r>: reload
         e: download-clear
-        <Ctrl+h>: history
         ww: config-source
         xx: config-cycle statusbar.show always never
         xz: config-cycle tabs.show always switching
@@ -39,19 +39,13 @@ settings:
   scrolling.smooth:
     global: true
   statusbar.show:
-    global: never
+    global: always
   statusbar.widgets:
     global:
     - url
     - tabs
   tabs.show:
     global: always
-  tabs.padding:
-    global:
-      bottom: 10
-      left: 5
-      right: 5
-      top: 10
   tabs.wrap:
     global: true
   url.default_page:

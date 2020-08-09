@@ -4,7 +4,7 @@ set noswapfile
 set guicursor=
 set nuw=1
 syntax on
-highlight LineNr ctermfg=2
+set cursorline
 map <C-a> <esc>ggVG<CR>
 map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>

@@ -9,7 +9,7 @@
 ```
 git clone https://github.com/jujey/dots
 cd dots
-sudo chmod a+rx install
+chmod a+rx install
 ./install
 ```
 

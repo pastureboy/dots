@@ -19,9 +19,9 @@ settings:
         '7': tab-focus 7
         '8': tab-focus 8
         '9': tab-focus 9
-        <Ctrl+Left>: back
-        <Ctrl+Right>: forward
-        <Ctrl+h>: history
+        <Ctrl+h>: back
+        <Ctrl+l>: forward
+        <Ctrl+Shift+h>: history
         <Ctrl+r>: reload
         e: download-clear
         ww: config-source

@@ -2,7 +2,7 @@
 URxvt.font: xft:scientifica:size=10
 /*URxvt.boldFont:*/
 URxvt.scrollBar: false
-URxvt.internalBorder: 16
+URxvt.internalBorder: 8
 URxvt.letterSpace: 1
 
 /* extensions */

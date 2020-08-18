@@ -3,7 +3,7 @@ config.load_autoconfig()
 config.set("colors.webpage.darkmode.enabled", True)
 
 c.tabs.indicator.width = 0
-c.tabs.padding = {'top': 10, 'bottom': 10, 'left': 10, 'right': 10}
+c.tabs.padding = {'top': 2, 'bottom': 2, 'left': 2, 'right': 2}
 c.tabs.favicons.show = 'never'
 c.tabs.title.format = '{current_title}'
 

@@ -18,6 +18,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 sxhkd &
-./.fehbg &
+#./.fehbg &
 #borders &
 xsetroot -solid "$color0" &

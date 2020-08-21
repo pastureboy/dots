@@ -27,6 +27,7 @@ if [ -f $start ]; then
 	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
 	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
 else
+	mkdir ~/Documents/startpage/
 	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
 	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
 fi
@@ -36,6 +37,7 @@ if [ -f $tree ]; then
 	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
 	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
 else
+	mkdir ~/Documents/treepage/
 	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
 	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
 fi

@@ -19,5 +19,6 @@ bspc config gapless_monocle      true
 
 sxhkd &
 #./.fehbg &
-#borders &
-xsetroot -solid "$color0" &
+borders &
+xsetroot -solid "$color1" &
+xsetroot -cursor_name left_ptr &

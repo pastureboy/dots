@@ -26,6 +26,6 @@ Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintfull
-Xcursor.theme:  Adwaita
+Xcursor.theme: Adwaita
 Xcursor.theme_core:	true
 Xcursor.size:	0

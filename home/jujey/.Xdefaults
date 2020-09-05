@@ -1,9 +1,9 @@
 /* font settings */
-URxvt.font: xft:Terminus:style=Regular:pixelsize=9
-URxvt.boldFont:
+URxvt.font: xft:monospace:style=Regular:size=10
+/*URxvt.boldFont:*/
 URxvt.scrollBar: false
 URxvt.internalBorder: 8
-URxvt.letterSpace: 0
+URxvt.letterSpace: -1
 
 /* extensions */
 URxvt.perl-ext-common: ...,font-size,default,matcher

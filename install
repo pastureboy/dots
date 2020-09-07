@@ -1,6 +1,5 @@
 #!/bin/bash
 
-file=~/.urxvt/ext/font-size
 start=~/Documents/startpage/
 tree=~/Documents/treepage/
 
@@ -21,7 +20,6 @@ cp -r ~/dots/home/jujey/.bashrc ~/
 cp -r ~/dots/home/jujey/dmen.sh ~/
 cp -r ~/dots/home/jujey/lock ~/
 cp -r ~/dots/home/jujey/.vimrc ~/
-cp -r ~/dots/home/jujey/.Xdefaults ~/
 
 cd ~/st/ && sudo make clean install
 
@@ -51,15 +49,6 @@ cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/sea.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictures/
-
-if [ -f $file ]; then
-	rm -rf ~/.urxvt/
-	mkdir ~/.urxvt/
-	cp -r ~/dots/home/jujey/urxvt/ext ~/.urxvt/
-else
-	mkdir ~/.urxvt/
-	cp -r ~/dots/home/jujey/urxvt/ext ~/.urxvt/
-fi
 
 cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
 cp ~/dots/usr/bin/borders /usr/bin/

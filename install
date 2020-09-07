@@ -4,11 +4,12 @@ file=~/.urxvt/ext/font-size
 start=~/Documents/startpage/
 tree=~/Documents/treepage/
 
-sudo pacman -S git bspwm sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser rxvt-unicode w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+sudo pacman -S git bspwm sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
 
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/
 
+cp -r ~/dots/home/jujey/st/ ~/
 cp -r ~/dots/home/jujey/config/bspwm ~/.config/
 cp -r ~/dots/home/jujey/config/nvim ~/.config/
 cp -r ~/dots/home/jujey/config/picom ~/.config/
@@ -21,6 +22,8 @@ cp -r ~/dots/home/jujey/dmen.sh ~/
 cp -r ~/dots/home/jujey/lock ~/
 cp -r ~/dots/home/jujey/.vimrc ~/
 cp -r ~/dots/home/jujey/.Xdefaults ~/
+
+cd ~/st/ && sudo make clean install
 
 if [ -f $start ]; then
 	rm -rf ~/Documents/startpage/
@@ -67,7 +70,7 @@ sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/p
 cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 rm -rf ~/opt/
 
-yay -S pywal-git i3lock-color-git corrupter-git xwinwrap-git
+yay -S pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'

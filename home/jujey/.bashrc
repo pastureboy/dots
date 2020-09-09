@@ -20,5 +20,8 @@ source ~/.cache/wal/colors-tty.sh
 # nvim stuf
 VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 
+# st
+echo "set enable-keypad on" >> ~/.inputrc
+
 # reload xdefaults
 xrdb ~/.Xdefaults

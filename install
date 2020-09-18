@@ -3,12 +3,12 @@
 start=~/Documents/startpage/
 tree=~/Documents/treepage/
 
-sudo pacman -S git bspwm sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+sudo pacman -S git bspwm alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
 
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/
 
-cp -r ~/dots/home/jujey/st/ ~/
+cp -r ~/dots/home/jujey/config/alacritty/ ~/.config/
 cp -r ~/dots/home/jujey/config/bspwm ~/.config/
 cp -r ~/dots/home/jujey/config/nvim ~/.config/
 cp -r ~/dots/home/jujey/config/picom ~/.config/
@@ -20,8 +20,6 @@ cp -r ~/dots/home/jujey/.bashrc ~/
 cp -r ~/dots/home/jujey/dmen.sh ~/
 cp -r ~/dots/home/jujey/lock ~/
 cp -r ~/dots/home/jujey/.vimrc ~/
-
-cd ~/st/ && sudo make clean install
 
 if [ -f $start ]; then
 	rm -rf ~/Documents/startpage/

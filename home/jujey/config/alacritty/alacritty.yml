@@ -1,0 +1,8 @@
+window:
+        padding:
+                y: 8
+                x: 8
+
+font:
+        normal:
+                family: Terminus

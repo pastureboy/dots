@@ -23,6 +23,3 @@ VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 # st
 echo "set enable-keypad on" >> ~/.inputrc
 cd ~
-
-# reload xdefaults
-xrdb ~/.Xdefaults

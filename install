@@ -3,23 +3,28 @@
 clear
 start=~/Documents/startpage/
 tree=~/Documents/treepage/
+rm -rf $start
+rm -rf $tree
 
 while :; do
-	read -rp "Install dependencies? (y/n)" dep
-	if [ dep = "y" ]; then
+	printf "Install dependencies? (y/n)\n"
+	read dep
+	if [ $dep = "y" ]; then
 		sudo pacman -S git bspwm alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
 		pip install xinput-gui
 		yay -S pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 		rm -rf ~/opt/
-	elif [ dep = "n" ]; then
-		break;
+		clear
+		printf "\nDependencies installed succesfully!\n\n"
+		break
+	elif [ $dep = "n" ]; then
+		break
 	else
 		clear
 		continue 2;
 	fi
 done
-break;
 
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/
@@ -37,25 +42,13 @@ cp -r ~/dots/home/jujey/dmen.sh ~/
 cp -r ~/dots/home/jujey/lock ~/
 cp -r ~/dots/home/jujey/.vimrc ~/
 
-if [ -f $start ]; then
-	rm -rf ~/Documents/startpage/
-	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
-	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
-else
-	mkdir ~/Documents/startpage/
-	cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
-	cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
-fi
+mkdir ~/Documents/startpage/
+cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
+cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
 
-if [ -f $tree ]; then
-	rm -rf ~/Documents/treepage/
-	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
-	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
-else
-	mkdir ~/Documents/treepage/
-	cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
-	cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
-fi
+mkdir ~/Documents/treepage/
+cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
+cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
 
 cp -r ~/dots/home/jujey/Pictures/me.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me2.jpg ~/Pictures/
@@ -71,16 +64,20 @@ cp ~/dots/usr/bin/fff /usr/bin/
 sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff
 
 while :; do
-	read -rp "Install vim plugins? (y/n)" vim
-	if [ vim = "y" ]; then
+	printf "Install vim plugins? (y/n)\n"
+	read vim
+	if [ $vim = "y" ]; then
 		sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 		       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-		printf "\nThe installation has been completed successfully!\n"
-		printf "\nDon't forget to type ':PlugInstall' when opening vim for the first time!\n\n"
-	elif [ vim = "n" ]; then
-		break;
+		clear
+		printf "The installation has been completed successfully!\n"
+		printf "Don't forget to type ':PlugInstall' when opening vim for the first time!\n\n"
+		break
+	elif [ $vim = "n" ]; then
+		break
 	else
 		continue 2
 	fi
 done
-break;
+
+cd ~

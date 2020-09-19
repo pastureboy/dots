@@ -26,9 +26,9 @@ border_width_in_focused=$border_width_in_normal
 border_width_out_focused=$border_width_out_normal
 
 . "${HOME}/.cache/wal/colors.sh"
-border_color_in_normal=${color1#?}
+border_color_in_normal=${color4#?}
 border_color_out_normal=${color0#?}
-border_color_in_focused=${color4#?}
+border_color_in_focused=${color1#?}
 border_color_out_focused=${color0#?}
 
 type theme >/dev/null 2>&1 && eval "$(theme get)"

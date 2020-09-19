@@ -4,6 +4,7 @@ start=~/Documents/startpage/
 tree=~/Documents/treepage/
 
 sudo pacman -S git bspwm alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+pip install xinput-gui
 
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/

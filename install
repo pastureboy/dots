@@ -10,7 +10,7 @@ while :; do
 	printf "Install dependencies? (y/n)\n"
 	read dep
 	if [ $dep = "y" ]; then
-		sudo pacman -S git bspwm alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+		sudo pacman -S git bspwm alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
 		pip install xinput-gui
 		yay -S pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
@@ -60,8 +60,9 @@ cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictu
 cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
 cp ~/dots/usr/bin/borders /usr/bin/
 cp ~/dots/usr/bin/fff /usr/bin/
+cp ~/dots/usr/bin/discord /usr/bin/
 
-sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff
+sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/discord
 
 while :; do
 	printf "Install vim plugins? (y/n)\n"

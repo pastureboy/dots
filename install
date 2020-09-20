@@ -25,7 +25,23 @@ while :; do
 		continue 2;
 	fi
 done
-
+break;
+clear
+while :; do
+        printf "Do you wish to change shell? (y/n)\n"
+        read shell
+	printf "\n"
+        if [ $shell = "y" ]; then
+                chsh
+        elif [ $shell = "n" ]; then
+                break
+	else
+                clear
+                continue 2;
+	fi
+done
+break;
+clear
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/
 
@@ -63,7 +79,7 @@ cp ~/dots/usr/bin/fff /usr/bin/
 cp ~/dots/usr/bin/discord /usr/bin/
 
 sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/discord
-
+clear
 while :; do
 	printf "Install vim plugins? (y/n)\n"
 	read vim
@@ -75,10 +91,10 @@ while :; do
 		printf "Don't forget to type ':PlugInstall' when opening vim for the first time!\n\n"
 		break
 	elif [ $vim = "n" ]; then
+		clear
 		break
 	else
 		continue 2
 	fi
 done
-
 cd ~

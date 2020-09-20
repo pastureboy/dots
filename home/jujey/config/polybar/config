@@ -97,7 +97,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${xrdb:color0:#222}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 

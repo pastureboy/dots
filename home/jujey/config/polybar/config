@@ -81,7 +81,7 @@ interval = 1
 format-prefix = " "
 format = <label>
 exec = python ~/.config/polybar/spotify.py -f '{artist}: {song}'
-format-underline = #1db954
+format-underline = ${xrdb:color2:#222}
 
 [module/filesystem]
 type = internal/fs
@@ -193,7 +193,7 @@ type = internal/cpu
 interval = 2
 format-prefix = "CPU"
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+format-underline = ${xrdb:color2:#222}
 label = %percentage:2%%
 
 [module/memory]
@@ -201,7 +201,7 @@ type = internal/memory
 interval = 2
 format-prefix = "MEM "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = ${xrdb:color3:#222}
 label = %percentage_used%%
 
 [module/wlan]
@@ -254,7 +254,7 @@ time-alt = %H:%M:%S
 
 format-prefix = T
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline = ${xrdb:color5:#222}
 
 label = %date% %time%
 
@@ -269,13 +269,13 @@ label-muted = M muted
 label-muted-foreground = ${xrdb:color7:#222}
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = ${xrdb:color2:#222}
+bar-volume-foreground-1 = ${xrdb:color2:#222}
+bar-volume-foreground-2 = ${xrdb:color2:#222}
+bar-volume-foreground-3 = ${xrdb:color2:#222}
+bar-volume-foreground-4 = ${xrdb:color2:#222}
+bar-volume-foreground-5 = ${xrdb:color2:#222}
+bar-volume-foreground-6 = ${xrdb:color2:#222}
 bar-volume-gradient = false
 bar-volume-indicator =
 bar-volume-indicator-font = 1
@@ -283,7 +283,7 @@ bar-volume-fill = ─
 bar-volume-fill-font = 1
 bar-volume-empty = ─
 bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-foreground = ${xrdb:color15:#222}
 
 [module/battery]
 type = internal/battery
@@ -345,11 +345,11 @@ expand-right = true
 format-spacing = 1
 
 label-open = 
-label-open-foreground = ${colors.secondary}
+label-open-foreground = ${xrdb:color1:#222}
 label-close =  cancel
-label-close-foreground = ${colors.secondary}
+label-close-foreground = ${xrdb:color2:#222}
 label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator-foreground = ${xrdb:color15:#222}
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1

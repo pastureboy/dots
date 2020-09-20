@@ -4,17 +4,31 @@ set guicursor=
 set nuw=1
 syntax on
 set cursorline
-map <C-s> <esc>:set nu<CR>
-map <C-d> <esc>:set nonu<CR>
+map <C-d> <esc>:set nu<CR>
+map <C-s> <esc>:set nonu<CR>
 map <C-a> <esc>ggVG<CR>
 map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>
 
-call plug#begin('~/local/share/nvim/plugged')
+set laststatus=2
+set statusline+=[%F]
+set statusline+=%#LineNr#
+set statusline+=%#Normal#
+set statusline+=\
+set statusline+=%#Pmenu#
+set statusline+=[%v]
+set statusline+=%#Normal#
+set statusline+=\
+set statusline+=%#PmenuSel#
+set statusline+=[%=%p\%%]
+set statusline+=%#Normal#
+set statusline+=\
+set statusline+=%#Todo#
+set statusline+=[%=%l\ ->\ %L]
 
+call plug#begin('~/local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
-
 call plug#end()
 
 let g:goyo_width = 50

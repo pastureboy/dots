@@ -191,10 +191,10 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU"
+format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color2:#222}
-label = %percentage:2%%
+label = %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -252,7 +252,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = T
+format-prefix = TIME
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color5:#222}
 
@@ -262,7 +262,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = V %percentage%%
+label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = M muted

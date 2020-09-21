@@ -1,3 +1,13 @@
+# volume
+XF86AudioRaiseVolume
+	ponymix unmute && ponymix increase 10
+
+XF86AudioLowerVolume
+	ponymix unmute && ponymix decrease 10
+
+XF86AudioMute
+	ponymix mute
+
 # terminal emulator
 super + Return
 	alacritty

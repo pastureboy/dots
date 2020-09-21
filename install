@@ -76,9 +76,9 @@ cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictu
 cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
 cp ~/dots/usr/bin/borders /usr/bin/
 cp ~/dots/usr/bin/fff /usr/bin/
-cp ~/dots/usr/bin/discord /usr/bin/
+cp ~/dots/usr/bin/whatsapp /usr/bin/
 
-sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/discord
+sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/whatsapp
 clear
 while :; do
 	printf "Install vim plugins? (y/n)\n"

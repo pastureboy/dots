@@ -13,9 +13,9 @@ map <C-n> <esc>:Limelight!!<CR>
 set laststatus=2
 set statusline+=\ %F\
 set statusline+=%#LineNr#
-set statusline+=%#VertSplit#
-set statusline+=\ %v\
-set statusline+=%#Normal#
+set statusline+=%#Search#
+set statusline+=\ \ %v\ \
+set statusline+=%#PmenuThumb#
 set statusline+=%=\
 set statusline+=%#PmenuSel#
 set statusline+=\ %p\%%\

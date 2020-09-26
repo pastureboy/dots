@@ -15,7 +15,7 @@ set statusline+=\ %F\
 set statusline+=%#LineNr#
 set statusline+=%#Search#
 set statusline+=\ \ %v\ \
-set statusline+=%#PmenuThumb#
+set statusline+=%#Normal#
 set statusline+=%=\
 set statusline+=%#PmenuSel#
 set statusline+=\ %p\%%\

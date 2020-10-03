@@ -18,7 +18,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 sxhkd &
-./.fehbg &
+wal -R &
 borders &
 .config/polybar/launch.sh &
 #xsetroot -solid "$color1" &

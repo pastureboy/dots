@@ -1,4 +1,5 @@
 <h1 align="center">jujey's dotfiles</h1>
+
 - i3
 
 ![i3](https://i.imgur.com/EMyULc0.png)

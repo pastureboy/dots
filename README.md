@@ -1,7 +1,9 @@
 <h1 align="center">jujey's dotfiles</h1>
 - i3
+
 ![i3](https://i.imgur.com/EMyULc0.png)
 - bspwm
+
 ![bspwm](https://i.imgur.com/lzvMur7.png)
 
 - ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)

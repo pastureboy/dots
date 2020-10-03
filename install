@@ -47,6 +47,7 @@ sudo chown jujey /usr/share/nvim/runtime/colors/
 
 cp -r ~/dots/home/jujey/config/alacritty/ ~/.config/
 cp -r ~/dots/home/jujey/config/bspwm ~/.config/
+cp -r ~/dots/home/jujey/config/i3 ~/.config/
 cp -r ~/dots/home/jujey/config/nvim ~/.config/
 cp -r ~/dots/home/jujey/config/picom ~/.config/
 cp -r ~/dots/home/jujey/config/polybar ~/.config/

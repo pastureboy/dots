@@ -38,7 +38,7 @@ super + w
 
 # quit/restart bspwm
 super + shift + {q,r}
-	bspc {quit,wm -r} && wal -R
+	bspc {quit,wm -r}
 
 # close and kill
 super + {_,shift + }q

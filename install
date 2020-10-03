@@ -101,6 +101,8 @@ while :; do
 	fi
 done
 cd ~
+wal -i ~/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg
+wal -R
 clear
 printf "Installing bitmap fonts...\n\n"
 sleep 1

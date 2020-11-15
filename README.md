@@ -7,7 +7,7 @@
 
 ![bspwm](https://i.imgur.com/lzvMur7.png)
 
-- ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
+## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 
 # Installation
 

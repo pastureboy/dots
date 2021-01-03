@@ -10,7 +10,7 @@ while :; do
 	printf "Install dependencies? (y/n)\n"
 	read dep
 	if [ $dep = "y" ]; then
-		sudo pacman -S discord git bspwm alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
+		sudo pacman -S discord git bspwm i3-gaps alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
 		curl -sS https://download.spotify.com/debian/pubkey.gpg | gpg --import -
 		pamac build spotify
 		pip install xinput-gui
@@ -49,6 +49,7 @@ sudo chown jujey /usr/share/nvim/runtime/colors/
 
 cp -r ~/dots/home/jujey/config/alacritty/ ~/.config/
 cp -r ~/dots/home/jujey/config/bspwm ~/.config/
+cp -r ~/dots/home/jujey/config/i3 ~/.config/
 cp -r ~/dots/home/jujey/config/nvim ~/.config/
 cp -r ~/dots/home/jujey/config/picom ~/.config/
 cp -r ~/dots/home/jujey/config/polybar ~/.config/
@@ -105,41 +106,64 @@ cd ~
 wal -i ~/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg
 wal -R
 clear
-printf "Installing bitmap fonts...\n\n"
-sleep 1
-git clone https://github.com/Tecate/bitmap-fonts.git
-cd bitmap-fonts
-sudo cp -avr bitmap/ /usr/share/fonts
-xset fp+ /usr/share/fonts/bitmap
-fc-cache -fv
-cd /etc/fonts/conf.d/
-sudo rm /etc/fonts/conf.d/10*  
-sudo rm -rf 70-no-bitmaps.conf 
-sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
-sudo dpkg-reconfigure fontconfig
+
+while :; do
+	printf "Install bitmap fonts? (y/n)\n"
+	read bitmap
+	if [ $bitmap = "y" ]; then
+		printf "Installing bitmap fonts...\n\n"
+		sleep 1
+		git clone https://github.com/Tecate/bitmap-fonts.git
+		cd bitmap-fonts
+		sudo cp -avr bitmap/ /usr/share/fonts
+		xset fp+ /usr/share/fonts/bitmap
+		fc-cache -fv
+		cd /etc/fonts/conf.d/
+		sudo rm /etc/fonts/conf.d/10*  
+		sudo rm -rf 70-no-bitmaps.conf 
+		sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
+		sudo dpkg-reconfigure fontconfig
+	elif [ $bitmap = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
 cd ~
 
-clear
-printf "Applying pywal themes...\n\n"
-sleep 1
-betterdiscordctl install
-git clone https://github.com/guglicap/wal-discord.git
-chmod +x ./wal-discord/wal-discord
-ln -s "`pwd`/wal-discord/wal-discord" /usr/bin/
-wal-discord -u -t
-cd ~
+while :; do
+	printf "Install pywal on discord/spotify/gui? (y/n)\n"
+	read pywalwal
+	if [ $pywalwal = "y" ]; then
+		clear
+		printf "Applying pywal themes...\n\n"
+		sleep 1
+		betterdiscordctl install
+		git clone https://github.com/guglicap/wal-discord.git
+		chmod +x ./wal-discord/wal-discord
+		ln -s "`pwd`/wal-discord/wal-discord" /usr/bin/
+		wal-discord -u -t
+		cd ~
 
-sudo chown jujey /opt/ && sudo chown jujey /opt/spotify && sudo chown jujey /opt/spotify/Apps/
-spicetify && spicetify backup apply enable-devtool && spicetify update
-
-clear
-printf "Applying pywal on gui...\n\n"
-sleep 1
-cd ~
-git clone https://github.com/themix-project/oomox.git --recursive
-cd oomox
-make -f po.mk install
-./gui.sh
+		sudo chown jujey /opt/ && sudo chown jujey /opt/spotify && sudo chown jujey /opt/spotify/Apps/
+		spicetify && spicetify backup apply enable-devtool && spicetify update
+	
+		clear
+		printf "Applying pywal on gui...\n\n"
+		sleep 1
+		cd ~
+		git clone https://github.com/themix-project/oomox.git --recursive
+		cd oomox
+		make -f po.mk install
+		./gui.sh
+	elif [ $pywalwal = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
 cd ~
 clear
 printf "Installation completed!\n\n"

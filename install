@@ -70,6 +70,7 @@ cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
 cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
 
 cp -r ~/dots/home/jujey/Pictures/me.jpg ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/eu.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me2.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/

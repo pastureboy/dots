@@ -11,10 +11,8 @@ while :; do
 	read dep
 	if [ $dep = "y" ]; then
 		sudo pacman -S discord git bspwm i3-gaps alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
-		curl -sS https://download.spotify.com/debian/pubkey.gpg | gpg --import -
-		pamac build spotify
 		pip install xinput-gui
-		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git
+		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git spotify oomox spicetify-cli
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 		rm -rf ~/opt/
 		clear
@@ -104,8 +102,6 @@ while :; do
 	fi
 done
 cd ~
-wal -i ~/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg
-wal -R
 clear
 
 while :; do
@@ -154,7 +150,6 @@ while :; do
 		printf "Applying pywal on gui...\n\n"
 		sleep 1
 		cd ~
-		yay -S oomox
 		break
 	elif [ $pywalwal = "n" ]; then
 		clear
@@ -166,5 +161,7 @@ done
 cd ~
 clear
 printf "Installation completed!\n\n"
+wal -i ~/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg
+wal -R
 oomox-gui
 wal-discord -u -t

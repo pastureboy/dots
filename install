@@ -145,7 +145,6 @@ while :; do
 		git clone https://github.com/guglicap/wal-discord.git
 		chmod +x ./wal-discord/wal-discord
 		ln -s "`pwd`/wal-discord/wal-discord" /usr/bin/
-		wal-discord -u -t
 		cd ~
 
 		sudo chown jujey /opt/ && sudo chown jujey /opt/spotify && sudo chown jujey /opt/spotify/Apps/
@@ -155,10 +154,7 @@ while :; do
 		printf "Applying pywal on gui...\n\n"
 		sleep 1
 		cd ~
-		git clone https://github.com/themix-project/oomox.git --recursive
-		cd oomox
-		make -f po.mk install
-		./gui.sh
+		yay -S oomox
 		break
 	elif [ $pywalwal = "n" ]; then
 		clear
@@ -170,3 +166,5 @@ done
 cd ~
 clear
 printf "Installation completed!\n\n"
+oomox-gui
+wal-discord -u -t

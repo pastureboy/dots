@@ -76,6 +76,7 @@ cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/sea.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/akarsh-gurudeva-_B59bHRy-zc-unsplash.jpg ~/Pictures/
 
 cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
 cp ~/dots/usr/bin/borders /usr/bin/
@@ -161,7 +162,7 @@ done
 cd ~
 clear
 printf "Installation completed!\n\n"
-wal -i ~/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg
+wal -i ~/Pictures/akarsh-gurudeva-_B59bHRy-zc-unsplash.jpg
 wal -R
 oomox-gui
 wal-discord -u -t

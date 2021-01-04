@@ -2,7 +2,7 @@
 
 - i3
 
-![i3](https://i.imgur.com/EMyULc0.png)
+![i3](https://i.imgur.com/gtmESPE.png)
 - bspwm
 
 ![bspwm](https://i.imgur.com/lzvMur7.png)

@@ -35,6 +35,7 @@ while :; do
 	printf "\n"
         if [ $shell = "y" ]; then
                 chsh
+		break
         elif [ $shell = "n" ]; then
                 break
 	else
@@ -123,6 +124,7 @@ while :; do
 		sudo rm -rf 70-no-bitmaps.conf 
 		sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
 		sudo dpkg-reconfigure fontconfig
+		break
 	elif [ $bitmap = "n" ]; then
 		clear
 		break
@@ -157,6 +159,7 @@ while :; do
 		cd oomox
 		make -f po.mk install
 		./gui.sh
+		break
 	elif [ $pywalwal = "n" ]; then
 		clear
 		break

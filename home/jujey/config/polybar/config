@@ -53,7 +53,7 @@ modules-left = bspwm i3
 modules-center = spotify
 modules-right = xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
-tray-position = center
+tray-position =
 tray-padding = 2
 ;tray-background = #0063ff
 

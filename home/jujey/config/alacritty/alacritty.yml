@@ -6,3 +6,5 @@ window:
 font:
         normal:
                 family: Terminus
+                style: Regular
+        size: 11

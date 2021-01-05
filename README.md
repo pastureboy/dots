@@ -33,3 +33,4 @@ mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid 
 - [Roboto Mono](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete%20Mono.ttf)
 - [Thick Roboto Mono](https://github.com/6gk/polka/blob/master/usr/fonts/RobotoMono-Bold.ttf)
 - [Monaco](https://github.com/todylu/monaco.ttf)
+- Courier

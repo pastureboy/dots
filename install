@@ -130,7 +130,7 @@ while :; do
 	fi
 done
 cd ~
-
+clear
 while :; do
 	printf "Install pywal on discord/spotify/gui? (y/n)\n"
 	read pywalwal

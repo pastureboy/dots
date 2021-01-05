@@ -34,3 +34,4 @@ mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid 
 - [Thick Roboto Mono](https://github.com/6gk/polka/blob/master/usr/fonts/RobotoMono-Bold.ttf)
 - [Monaco](https://github.com/todylu/monaco.ttf)
 - Courier
+- Hack

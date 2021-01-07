@@ -49,8 +49,8 @@ font-0 = Terminus:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = bspwm i3
-modules-center = spotify
+modules-left = bspwm i3 spotify
+modules-center = xwindow
 modules-right = xkeyboard pulseaudio memory cpu date powermenu
 
 tray-position = none
@@ -84,6 +84,9 @@ label-indicator-background = ${xrdb:color4:#222}
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+#label-background = ${xrdb:color1:#222}
+label-underline = ${xrdb:color5:#222}
+label-padding = 1
 
 [module/spotify]
 type = custom/script
@@ -91,7 +94,9 @@ interval = 1
 format-prefix = " "
 format = <label>
 exec = python ~/.config/polybar/spotify.py -f '{artist}: {song}'
-format-underline = ${xrdb:color2:#222}
+format-underline = ${xrdb:color3:#222}
+#format-background = ${xrdb:color1:#222}
+format-padding = 1
 
 [module/filesystem]
 type = internal/fs
@@ -211,7 +216,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${xrdb:color3:#222}
+format-underline = ${xrdb:color4:#222}
 label = %percentage_used%%
 
 [module/wlan]
@@ -264,7 +269,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${xrdb:color5:#222}
+format-underline = ${xrdb:color1:#222}
 
 label = %date% %time%
 
@@ -294,6 +299,8 @@ bar-volume-fill-font = 1
 bar-volume-empty = ─
 bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${xrdb:color15:#222}
+
+format-volume-underline = ${xrdb:color5:#222}
 
 [module/battery]
 type = internal/battery
@@ -360,6 +367,9 @@ label-close =  cancel
 label-close-foreground = ${xrdb:color2:#222}
 label-separator = |
 label-separator-foreground = ${xrdb:color15:#222}
+
+format-underline = ${xrdb:color3:#222}
+format-padding = 1
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1

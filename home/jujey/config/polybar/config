@@ -45,16 +45,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Terminus:pixelsize=10;1
+font-0 = Terminus:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = spotify
-modules-right = xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = xkeyboard pulseaudio memory cpu date powermenu
 
-tray-position =
-tray-padding = 2
+tray-position = none
+tray-padding = 0
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -70,6 +70,16 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+label-layout =
+label-layout-underline = ${xrdb:color5:#222}
+
+label-indicator-padding = 2
+label-indicator-margin = 0
+label-indicator-background = ${xrdb:color4:#222}
 
 [module/xwindow]
 type = internal/xwindow
@@ -191,7 +201,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color2:#222}
 label = %percentage%%
@@ -199,7 +209,7 @@ label = %percentage%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "MEM "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color3:#222}
 label = %percentage_used%%
@@ -252,7 +262,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = TIME
+format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${xrdb:color5:#222}
 
@@ -262,10 +272,10 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = M muted
+label-muted =  0% ─────────
 label-muted-foreground = ${xrdb:color7:#222}
 
 bar-volume-width = 10

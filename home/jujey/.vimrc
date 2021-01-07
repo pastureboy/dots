@@ -6,6 +6,7 @@ syntax on
 set cursorline
 set hlsearch
 set spell
+autocmd VimEnter * SoftPencil
 map <C-d> <esc>:set nu<CR>
 map <C-s> <esc>:set nonu<CR>
 map <C-a> <esc>ggVG<CR>

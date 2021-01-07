@@ -7,7 +7,6 @@ c.tabs.padding = {'top': 8, 'bottom': 8, 'left': 8, 'right': 8}
 c.tabs.favicons.show = 'never'
 c.tabs.title.format = '{current_title}'
 c.tabs.title.alignment = 'center'
-c.tabs.padding = 2
 
 c.fonts.tabs.selected = '12pt Terminus'
 c.fonts.tabs.unselected = '12pt Terminus'

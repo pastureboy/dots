@@ -319,7 +319,7 @@ if os.path.isfile(colors_absolute):
 
     # Foreground color of selected even tabs.
     # Type: QtColor
-    c.colors.tabs.selected.even.fg = colors['special']['background']
+    c.colors.tabs.selected.even.fg = colors['special']['foreground']
 
     # Background color of selected odd tabs.
     # Type: QtColor
@@ -327,7 +327,7 @@ if os.path.isfile(colors_absolute):
 
     # Foreground color of selected odd tabs.
     # Type: QtColor
-    c.colors.tabs.selected.odd.fg = colors['special']['background']
+    c.colors.tabs.selected.odd.fg = colors['special']['foreground']
 
     # Background color for webpages if unset (or empty to use the theme's
     # color)

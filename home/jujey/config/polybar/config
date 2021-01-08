@@ -301,6 +301,7 @@ bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${xrdb:color15:#222}
 
 format-volume-underline = ${xrdb:color5:#222}
+format-muted-underline = ${xrdb:color5:#222}
 
 [module/battery]
 type = internal/battery

@@ -10,7 +10,7 @@ while :; do
 	printf "Install dependencies? (y/n)\n"
 	read dep
 	if [ $dep = "y" ]; then
-		sudo pacman -S picom discord git bspwm i3-gaps alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
+		sudo pacman -S youtube-dl picom discord git bspwm i3-gaps alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
 		pip install xinput-gui
 		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git spotify oomox spicetify-cli
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install

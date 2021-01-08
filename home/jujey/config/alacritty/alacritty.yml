@@ -7,4 +7,20 @@ font:
         normal:
                 family: Terminus
                 style: Regular
-        size: 11
+        size: 12
+
+        bold:
+                family: Terminus
+                style: Regular
+        size: 12
+
+cursor:
+        style: Beam
+        blinking: Always
+        blink_interval: 750
+        unfocused_hollow: false
+
+shell:
+        program: /bin/bash
+        args:
+                - --login

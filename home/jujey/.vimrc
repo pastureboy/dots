@@ -14,16 +14,16 @@ map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>
 
 set laststatus=2
-set statusline+=\ %F\
+set statusline+=\ %F\ 
 set statusline+=%#LineNr#
 set statusline+=%#Search#
-set statusline+=\ \ %v\ \
+set statusline+=\ \ %v\ \ 
 set statusline+=%#Normal#
-set statusline+=%=\
+set statusline+=%=\ 
 set statusline+=%#PmenuSel#
-set statusline+=\ %p\%%\
+set statusline+=\ %p\%%\ 
 set statusline+=%#Todo#
-set statusline+=\ %l\ ->\ %L\
+set statusline+=\ %l\ ->\ %L\ 
 
 call plug#begin('~/local/share/nvim/plugged')
 Plug 'reedes/vim-pencil'

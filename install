@@ -12,9 +12,9 @@ while :; do
 	if [ $dep = "y" ]; then
 		sudo pacman -S youtube-dl picom discord git bspwm i3-gaps alacritty ponymix sxhkd dmenu lxappearance cmus feh mpv neovim scrot git qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay chromium
 		pip install xinput-gui
-		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git spotify oomox spicetify-cli
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 		rm -rf ~/opt/
+		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git libxft-bgra-git spotify oomox spicetify-cli
 		clear
 		printf "\nDependencies installed succesfully!\n\n"
 		break
@@ -165,4 +165,4 @@ printf "Installation completed!\n\n"
 wal -i ~/Pictures/akarsh-gurudeva-_B59bHRy-zc-unsplash.jpg
 wal -R
 oomox-gui
-wal-discord -u -t
+wal-discord -t -u

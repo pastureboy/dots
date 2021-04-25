@@ -4,6 +4,8 @@ set guicursor=
 set nuw=1
 syntax on
 set cursorline
+set mouse=a
+set mouse=n
 set hlsearch
 set spell
 autocmd VimEnter * SoftPencil

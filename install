@@ -14,7 +14,7 @@ while :; do
 		pip install xinput-gui
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 		rm -rf ~/opt/
-		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git spotify oomox spicetify-cli picom-jonaburg-git
+		yay -S betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git spotify themix-gui spicetify-cli picom-jonaburg-git
 		clear
 		printf "\nDependencies installed succesfully!\n\n"
 		break
@@ -75,6 +75,7 @@ cp -r ~/dots/home/jujey/Pictures/me2.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/sea.png ~/Pictures/
+cp -r ~/dots/home/jujey/Pictures/waves.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/akarsh-gurudeva-_B59bHRy-zc-unsplash.jpg ~/Pictures/
 cp -r ~/dots/home/jujey/Pictures/kenrick-mills-3-EiAnsIXps-unsplash.jpg ~/Pictures/
@@ -164,7 +165,7 @@ done
 cd ~
 clear
 printf "Installation completed!\n\n"
-wal -i ~/Pictures/kenrick-mills-3-EiAnsIXps-unsplash.jpg
+wal -i ~/Pictures/waves.jpg -l
 wal -R
 oomox-gui
 wal-discord -t -u

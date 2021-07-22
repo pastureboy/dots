@@ -26,7 +26,7 @@ mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid 
 - ### [Beautiful Gifs](https://imgur.com/gallery/0Slze)
 
 # Extra
-![Zathura-Pywal](https://github.com/GideonWolfe/Zathura-Pywal)
+[Zathura-Pywal](https://github.com/GideonWolfe/Zathura-Pywal)
 
 # Fonts
 

@@ -9,7 +9,7 @@
 
 ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 
-# Installation
+# Installation (Broken atm)
 
 ```
 git clone https://github.com/jujey/dots
@@ -25,6 +25,8 @@ mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid 
 
 - ### [Beautiful Gifs](https://imgur.com/gallery/0Slze)
 
+# Extra
+![Zathura-Pywal](https://github.com/GideonWolfe/Zathura-Pywal)
 
 # Fonts
 

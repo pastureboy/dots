@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 tmpbg="/tmp/screen.png"
 scrot "$tmpbg"; corrupter "$tmpbg" "$tmpbg"
-i3lock --timecolor=ffffffff --datecolor=ffffffff --ringcolor=ffffff10 --keyhlcolor=ffffff95 --separatorcolor=ffffff00 --insidevercolor=00000099 --insidewrongcolor=00000099 --linecolor=20202099 --veriftext="" --wrongtext="" -k -i "$tmpbg"; rm "$tmpbg"
+i3lock --time-color=ffffffff --date-color=ffffffff --ring-color=ffffff10 --keyhl-color=ffffff95 --separator-color=ffffff00 --insidever-color=00000099 --insidewrong-color=00000099 --line-color=20202099 --verif-text="" --wrong-text="" -k -i "$tmpbg"; rm "$tmpbg"

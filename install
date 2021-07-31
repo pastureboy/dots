@@ -3,8 +3,7 @@
 clear
 start=~/Documents/startpage/
 tree=~/Documents/treepage/
-rm -rf $start
-rm -rf $tree
+minimal=~/Documents/minimal/
 
 while :; do
 	printf "Install dependencies? (y/n)\n"
@@ -46,47 +45,77 @@ clear
 sudo chown jujey /usr/bin/
 sudo chown jujey /usr/share/nvim/runtime/colors/
 
-cp -r ~/dots/home/jujey/config/alacritty/ ~/.config/
-cp -r ~/dots/home/jujey/config/bspwm ~/.config/
-cp -r ~/dots/home/jujey/config/i3 ~/.config/
-cp -r ~/dots/home/jujey/config/nvim ~/.config/
-cp -r ~/dots/home/jujey/config/picom ~/.config/
-cp -r ~/dots/home/jujey/config/polybar ~/.config/
-cp -r ~/dots/home/jujey/config/qutebrowser ~/.config/
-cp -r ~/dots/home/jujey/config/sxhkd ~/.config/
-cp -r ~/dots/home/jujey/config/mimeapps.list ~/.config/
-cp -r ~/dots/home/jujey/config/spicetify ~/.config/
-cp -r ~/dots/home/jujey/.bashrc ~/
-cp -r ~/dots/home/jujey/dmen.sh ~/
-cp -r ~/dots/home/jujey/lock ~/
-cp -r ~/dots/home/jujey/.vimrc ~/
+while :; do
+	printf "Copy & paste config files? (y/n)\n"
+	read cpfiles
+	if [ $cpfiles = "y" ]; then
+		cp -r ~/dots/home/jujey/config/alacritty/ ~/.config/
+		cp -r ~/dots/home/jujey/config/bspwm ~/.config/
+		cp -r ~/dots/home/jujey/config/i3 ~/.config/
+		cp -r ~/dots/home/jujey/config/nvim ~/.config/
+		cp -r ~/dots/home/jujey/config/picom ~/.config/
+		cp -r ~/dots/home/jujey/config/polybar ~/.config/
+		cp -r ~/dots/home/jujey/config/qutebrowser ~/.config/
+		cp -r ~/dots/home/jujey/config/sxhkd ~/.config/
+		cp -r ~/dots/home/jujey/config/mimeapps.list ~/.config/
+		cp -r ~/dots/home/jujey/config/spicetify ~/.config/
+		cp -r ~/dots/home/jujey/.bashrc ~/
+		cp -r ~/dots/home/jujey/dmen.sh ~/
+		cp -r ~/dots/home/jujey/lock ~/
+		cp -r ~/dots/home/jujey/.vimrc ~/
+	elif [ $cpfiles = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
 
-mkdir ~/Documents/startpage/
-cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
-cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
 
-mkdir ~/Documents/treepage/
-cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
-cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
+while :; do
+	printf "Install custom startpages? (y/n)\n"
+	read pages
+	if [ $pages = "y" ]; then
+		rm -rf $start
+		rm -rf $tree
+		rm -rf $minimal
 
-cp -r ~/dots/home/jujey/Pictures/me.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/eu.png ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/me2.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/me3.png ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/me4.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/sea.png ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/waves.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/charl-folscher-TvzGlW0a2qY-unsplash.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/akarsh-gurudeva-_B59bHRy-zc-unsplash.jpg ~/Pictures/
-cp -r ~/dots/home/jujey/Pictures/kenrick-mills-3-EiAnsIXps-unsplash.jpg ~/Pictures/
+		mkdir ~/Documents/startpage/
+		cp -r ~/dots/home/jujey/Documents/startpage/min.css ~/Documents/startpage/
+		cp -r ~/dots/home/jujey/Documents/startpage/min.html ~/Documents/startpage/
 
-cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
-cp ~/dots/usr/bin/borders /usr/bin/
-cp ~/dots/usr/bin/fff /usr/bin/
-cp ~/dots/usr/bin/whatsapp /usr/bin/
-cp ~/dots/usr/bin/lotion /usr/bin/
+		mkdir ~/Documents/minimal/
+		cp -r ~/dots/home/jujey/Documents/minimal/style.css ~/Documents/minimal/
+		cp -r ~/dots/home/jujey/Documents/minimal/page.html ~/Documents/minimal/
 
-sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/whatsapp & sudo chmod a+rx /usr/bin/lotion
+		mkdir ~/Documents/treepage/
+		cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
+		cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
+	elif [ $pages = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
+
+while :; do
+	printf "Install borders, fff & whatsapp? (y/n)\n"
+	read bfw
+	if [ $bfw = "y" ]; then
+		cp ~/dots/usr/bin/borders /usr/bin/
+		cp ~/dots/usr/bin/fff /usr/bin/
+		cp ~/dots/usr/bin/whatsapp /usr/bin/
+	elif [ $bfw = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
+clear
+printf "Giving permission to executables...\n\n"
+sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/whatsapp
 clear
 while :; do
 	printf "Install vim plugins? (y/n)\n"
@@ -109,7 +138,7 @@ cd ~
 clear
 
 while :; do
-	printf "Install bitmap fonts? (y/n)\n"
+	printf "Install bitmap fonts pack? (y/n)\n"
 	read bitmap
 	if [ $bitmap = "y" ]; then
 		printf "Installing bitmap fonts...\n\n"
@@ -135,7 +164,7 @@ done
 cd ~
 clear
 while :; do
-	printf "Install pywal on discord/spotify/gui? (y/n)\n"
+	printf "Install pywal on discord/spotify/gui/vim? (y/n)\n"
 	read pywalwal
 	if [ $pywalwal = "y" ]; then
 		clear
@@ -147,6 +176,7 @@ while :; do
 		ln -s "`pwd`/wal-discord/wal-discord" /usr/bin/
 		cd ~
 
+		cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
 		sudo chown jujey /opt/ && sudo chown jujey /opt/spotify && sudo chown jujey /opt/spotify/Apps/
 		spicetify && spicetify backup apply enable-devtool && spicetify update
 	
@@ -164,8 +194,23 @@ while :; do
 done
 cd ~
 clear
+
+while :; do
+	printf "Apply/update pywal? (y/n)\n"
+	read appwal
+	if [ $appwal = "y" ]; then
+		clear
+		cp -r ~/dots/home/jujey/Pictures/waves.jpg ~/Pictures/
+		wal -i ~/Pictures/waves.jpg -l
+		wal -R
+		themix-gui
+		wal-discord -t -u
+	elif [ $appwal = "n" ]; then
+		clear
+		break
+	else
+		continue 2
+	fi
+done
+clear
 printf "Installation completed!\n\n"
-wal -i ~/Pictures/waves.jpg -l
-wal -R
-oomox-gui
-wal-discord -t -u

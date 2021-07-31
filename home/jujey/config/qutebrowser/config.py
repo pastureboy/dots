@@ -1,6 +1,6 @@
 config.source('qutewal.py')
 config.load_autoconfig()
-config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.enabled", False)
 
 c.tabs.indicator.width = 0
 c.tabs.padding = {'top': 8, 'bottom': 8, 'left': 8, 'right': 8}

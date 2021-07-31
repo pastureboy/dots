@@ -19,31 +19,49 @@ settings:
         '7': tab-focus 7
         '8': tab-focus 8
         '9': tab-focus 9
+        <Ctrl+Shift+h>: history
         <Ctrl+h>: back
         <Ctrl+l>: forward
-        <Ctrl+Shift+h>: history
         <Ctrl+r>: reload
         e: download-clear
         ww: config-source
         xx: config-cycle statusbar.show always never
         xz: config-cycle tabs.show always switching
+  colors.webpage.darkmode.enabled:
+    global: true
+  colors.webpage.preferred_color_scheme:
+    global: dark
   content.desktop_capture:
     https://discord.com: true
-  content.media_capture:
+  content.media.audio_capture:
     https://discord.com: true
-  content.notifications:
+  content.media.audio_video_capture:
+    https://discord.com: true
+  content.media.video_capture:
+    https://discord.com: true
+  content.notifications.enabled:
     https://www.reddit.com: false
     https://www.youtube.com: false
   content.persistent_storage:
     https://mega.nz: true
   scrolling.smooth:
     global: true
+  statusbar.padding:
+    global:
+      bottom: 1
+      left: 10
+      right: 10
+      top: 1
   statusbar.show:
-    global: always
+    global: never
   statusbar.widgets:
     global:
     - url
-    - tabs
+    - scroll
+  tabs.max_width:
+    global: 300
+  tabs.position:
+    global: bottom
   tabs.show:
     global: always
   tabs.wrap:

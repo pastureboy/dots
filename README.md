@@ -9,7 +9,7 @@
 
 ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 
-# Installation (Broken atm)
+# Installation
 
 ```
 git clone https://github.com/jujey/dots

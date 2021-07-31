@@ -46,12 +46,6 @@ settings:
     https://mega.nz: true
   scrolling.smooth:
     global: true
-  statusbar.padding:
-    global:
-      bottom: 1
-      left: 10
-      right: 10
-      top: 1
   statusbar.show:
     global: never
   statusbar.widgets:

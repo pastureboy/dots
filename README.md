@@ -1,6 +1,6 @@
 <h1 align="center">jujey's dotfiles</h1>
 
-- i3
+- bspwm
 
 ![bspwm](https://i.imgur.com/phlzK9o.png)
 

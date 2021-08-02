@@ -206,7 +206,8 @@ while :; do
 	if [ $appwal = "y" ]; then
 		clear
 		cp -r ~/dots/home/jujey/Pictures/waves.jpg ~/Pictures/
-		wal -i ~/Pictures/waves.jpg -l
+		cp -r ~/dots/home/jujey/Pictures/spirited.jpg ~/Pictures/
+		wal -i ~/Pictures/spirited.jpg -l
 		wal -R
 		themix-gui
 		wal-discord -t -u

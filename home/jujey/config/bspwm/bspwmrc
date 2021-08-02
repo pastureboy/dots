@@ -23,5 +23,5 @@ borders &
 .config/polybar/launch.sh &
 #xsetroot -solid "$color1" &
 xsetroot -cursor_name left_ptr &
-picom &
+#picom &
 fc-cache -fv &

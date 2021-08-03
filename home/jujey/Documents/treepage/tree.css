@@ -1,10 +1,13 @@
 @import 'file:///home/jujey/.cache/wal/colors.css';
 @font-face {
-    font-family: "Roboto";
+    font-family: 'font';
+    src: url('/usr/share/fonts/TTF/Hack-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
 }
 
 .prompt {
-    font-family: Roboto;
+    font-family: font;
     color: var(--color1);
 }
 
@@ -33,7 +36,7 @@ span {
 
 h1 {
     display: inline;
-    font-family: Roboto;
+    font-family: font;
     font-size: 1rem;
     font-weight: normal;
     color: var(--color4);
@@ -76,7 +79,7 @@ li:last-child::after {
 }
 
 a {
-    font-family: Roboto;
+    font-family: font;
     font-size: 1rem;
     color: var(--color2);
     text-decoration: none;
@@ -94,7 +97,7 @@ form h1 {
 }
 
 input {
-    font-family: Roboto;
+    font-family: font;
     font-size: 1rem;
     color: var(--foreground);
     background-color: var(--background);

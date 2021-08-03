@@ -8,14 +8,14 @@ window:
 
 font:
         normal:
-                family: Terminus
+                family: tewi
                 style: Regular
-        size: 12
+        size: 10
 
         bold:
-                family: Terminus
+                family: tewi
                 style: Bold
-        size: 12
+        size: 10
 
 cursor:
         style: Block

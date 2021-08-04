@@ -148,16 +148,7 @@ while :; do
 	if [ $bitmap = "y" ]; then
 		printf "Installing bitmap fonts...\n\n"
 		sleep 1
-		git clone https://github.com/Tecate/bitmap-fonts.git
-		cd bitmap-fonts
-		sudo cp -avr bitmap/ /usr/share/fonts
-		xset fp+ /usr/share/fonts/bitmap
-		fc-cache -fv
-		cd /etc/fonts/conf.d/
-		sudo rm /etc/fonts/conf.d/10*  
-		sudo rm -rf 70-no-bitmaps.conf 
-		sudo ln -s ../conf.avail/70-yes-bitmaps.conf .
-		sudo dpkg-reconfigure fontconfig
+		yay -S tecate-bitmap-fonts-bdf-git tecate-bitmap-fonts-otb-git
 		break
 	elif [ $bitmap = "n" ]; then
 		clear

@@ -9,12 +9,12 @@ while :; do
 	printf "Install dependencies? (y/n)\n"
 	read dep
 	if [ $dep = "y" ]; then
-		sudo pacman -S foliate zathura youtube-dl discord git bspwm i3-gaps alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
+		sudo pacman -S chromium python-pywal sassc foliate zathura youtube-dl discord git bspwm i3-gaps alacritty sxhkd dmenu lxappearance cmus feh mpv neovim scrot qutebrowser w3m xdotool pavucontrol npm python python-dbus polybar gnome-screenshot noto-fonts-emoji xorg-xsetroot binutils make gcc pkg-config fakeroot autoconf automake yay
 		cd ~ && git clone https://github.com/wmutils/opt && cd ~/opt/ && make && sudo make install
 		rm -rf ~/opt/
 		git clone https://github.com/jasonliang-dev/dmenu/ && cd ~/dmenu/ && sudo make install
 		rm -rf ~/dmenu/
-		yay -S ponymix betterdiscordctl pywal-git i3lock-color-git corrupter-git xwinwrap-git spotify themix-gui spicetify-cli picom-jonaburg-git
+		yay -S ponymix betterdiscordctl i3lock-color-git corrupter-git xwinwrap-git spotify themix-gui spicetify-cli picom-jonaburg-git
 		clear
 		printf "\nDependencies installed succesfully!\n\n"
 		break
@@ -68,6 +68,7 @@ while :; do
 		cp -r ~/dots/home/jujey/dmen.sh ~/
 		cp -r ~/dots/home/jujey/lock ~/
 		cp -r ~/dots/home/jujey/.vimrc ~/
+		break
 	elif [ $cpfiles = "n" ]; then
 		clear
 		break
@@ -96,6 +97,7 @@ while :; do
 		mkdir ~/Documents/treepage/
 		cp -r ~/dots/home/jujey/Documents/treepage/tree.css ~/Documents/treepage/
 		cp -r ~/dots/home/jujey/Documents/treepage/tree.html ~/Documents/treepage/
+		break
 	elif [ $pages = "n" ]; then
 		clear
 		break
@@ -111,6 +113,7 @@ while :; do
 		cp ~/dots/usr/bin/borders /usr/bin/
 		cp ~/dots/usr/bin/fff /usr/bin/
 		cp ~/dots/usr/bin/whatsapp /usr/bin/
+		break
 	elif [ $bfw = "n" ]; then
 		clear
 		break
@@ -202,6 +205,7 @@ while :; do
 		wal -R
 		themix-gui
 		wal-discord -t -u
+		break
 	elif [ $appwal = "n" ]; then
 		clear
 		break

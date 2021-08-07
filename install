@@ -14,7 +14,7 @@ while :; do
 		rm -rf ~/opt/
 		git clone https://github.com/jasonliang-dev/dmenu/ && cd ~/dmenu/ && sudo make install
 		rm -rf ~/dmenu/
-		yay -S ponymix betterdiscordctl i3lock-color-git corrupter-git xwinwrap-git spotify themix-gui spicetify-cli picom-jonaburg-git
+		yay -S ponymix betterdiscordctl i3lock-color-git corrupter-git xwinwrap-git spotify themix-full-git picom-jonaburg-git
 		clear
 		printf "\nDependencies installed succesfully!\n\n"
 		break
@@ -63,7 +63,6 @@ while :; do
 		cp -r ~/dots/home/jujey/config/qutebrowser ~/.config/
 		cp -r ~/dots/home/jujey/config/sxhkd ~/.config/
 		cp -r ~/dots/home/jujey/config/mimeapps.list ~/.config/
-		cp -r ~/dots/home/jujey/config/spicetify ~/.config/
 		cp -r ~/dots/home/jujey/.bashrc ~/
 		cp -r ~/dots/home/jujey/dmen.sh ~/
 		cp -r ~/dots/home/jujey/lock ~/
@@ -176,8 +175,6 @@ while :; do
 		cd ~
 
 		cp ~/dots/usr/share/nvim/runtime/colors/wal.vim /usr/share/nvim/runtime/colors/wal.vim
-		sudo chown jujey /opt/ && sudo chown jujey /opt/spotify && sudo chown jujey /opt/spotify/Apps/
-		spicetify && spicetify backup apply enable-devtool && spicetify update
 	
 		clear
 		printf "Applying pywal on gui...\n\n"

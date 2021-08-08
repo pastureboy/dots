@@ -198,7 +198,7 @@ while :; do
 		clear
 		cp -r ~/dots/home/jujey/Pictures/waves.jpg ~/Pictures/
 		cp -r ~/dots/home/jujey/Pictures/spirited.jpg ~/Pictures/
-		wal -i ~/Pictures/spirited.jpg -l
+		wal -i ~/Pictures/waves.jpg -l
 		wal -R
 		themix-gui
 		wal-discord -t -u

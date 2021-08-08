@@ -2,7 +2,7 @@
 
 - bspwm
 
-![bspwm](https://i.imgur.com/phlzK9o.png)
+![bspwm](https://i.imgur.com/ubOll1c.png)
 
 ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 

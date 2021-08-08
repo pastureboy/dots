@@ -14,7 +14,7 @@ while :; do
 		rm -rf ~/opt/
 		git clone https://github.com/jasonliang-dev/dmenu/ && cd ~/dmenu/ && sudo make install
 		rm -rf ~/dmenu/
-		yay -S ponymix betterdiscordctl i3lock-color-git corrupter-git xwinwrap-git spotify themix-full-git picom-jonaburg-git
+		yay -S nerd-fonts-fira-code ponymix betterdiscordctl i3lock-color-git corrupter-git xwinwrap-git spotify themix-full-git picom-jonaburg-git
 		clear
 		printf "\nDependencies installed succesfully!\n\n"
 		break

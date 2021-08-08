@@ -17,7 +17,7 @@ chmod a+rx install
 
 # GIFS
 
-mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio ~/Videos/video.mp4`
+Set an .mp4 as a wallpaper: `xwinwrap -fs -fdt -ni -b -nf -un -o 1.0 -debug -- mpv -wid WID --loop --no-audio ~/Videos/video.mp4`
 
 - ### [Beautiful Gifs](https://imgur.com/gallery/0Slze)
 

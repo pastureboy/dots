@@ -1,13 +1,13 @@
 @import 'file:///home/jujey/.cache/wal/colors.css';
 @font-face {
     font-family: 'font';
-    src: url('/usr/share/fonts/TTF/Hack-Regular.ttf') format('truetype');
+    src: url('/usr/share/fonts/TTF/Fura\ Code\ Regular\ Nerd\ Font\ Complete.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 html {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 body {

@@ -14,7 +14,6 @@ cd dots
 chmod a+rx install
 ./install
 ```
-Polybar alternative: https://github.com/adi1090x/polybar-themes
 
 # GIFS
 

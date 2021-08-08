@@ -8,12 +8,12 @@ window:
 
 font:
         normal:
-                family: tewi
+                family: FuraCode NerdFont
                 style: Regular
         size: 10
 
         bold:
-                family: tewi
+                family: FuraCode NerdFont
                 style: Bold
         size: 10
 

@@ -121,7 +121,7 @@ while :; do
 done
 clear
 printf "Giving permission to executables...\n\n"
-sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/fff & sudo chmod a+rx /usr/bin/whatsapp
+sudo chmod a+rx ~/dmen.sh & sudo chmod a+rx ~/lock & sudo chmod a+rx ~/.config/polybar/launch.sh & sudo chmod a+rx /usr/bin/borders & sudo chmod a+rx ~/.config/bspwm/bspwmrc & sudo chmod a+rx ~/.config/sxhkd/sxhkdrc & sudo chmod a+rx /usr/bin/whatsapp
 clear
 while :; do
 	printf "Install vim plugins? (y/n)\n"

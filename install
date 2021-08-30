@@ -106,11 +106,10 @@ while :; do
 done
 
 while :; do
-	printf "Install borders, fff & whatsapp? (y/n)\n"
+	printf "Install double borders for (bspwm) & whatsapp (chromium)? (y/n)\n"
 	read bfw
 	if [ $bfw = "y" ]; then
 		cp ~/dots/usr/bin/borders /usr/bin/
-		cp ~/dots/usr/bin/fff /usr/bin/
 		cp ~/dots/usr/bin/whatsapp /usr/bin/
 		break
 	elif [ $bfw = "n" ]; then

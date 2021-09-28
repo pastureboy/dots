@@ -52,16 +52,8 @@
 ###
 ![flow](https://i.imgur.com/ls5iFJP.png)
 ###
-![coffee](https://i.imgur.com/yoFvjXD.png)
-###
 ![Goldsrc](https://i.imgur.com/A50O5KM.png)
 ###
 ![000](https://i.imgur.com/3bVTUhk.png)
-###
-![Natura](https://i.imgur.com/dQvqtui.png)
-###
-#![Cloudy](https://i.imgur.com/MjRD1Sh.jpg)>
-###
-![Campo](https://i.imgur.com/RUiyAIt.jpg)
 ###
 ![Tea](https://i.imgur.com/MQdhVkf.png)

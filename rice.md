@@ -60,7 +60,7 @@
 ###
 ![Natura](https://i.imgur.com/dQvqtui.png)
 ###
-<![Cloudy](https://i.imgur.com/MjRD1Sh.jpg)>
+#![Cloudy](https://i.imgur.com/MjRD1Sh.jpg)>
 ###
 ![Campo](https://i.imgur.com/RUiyAIt.jpg)
 ###

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ponymix unmute && ponymix increase 10

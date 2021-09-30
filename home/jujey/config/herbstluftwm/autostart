@@ -110,7 +110,7 @@ hc mousebind $Mod-Button3 resize
 
 # focus
 hc keybind $Mod-BackSpace   cycle_monitor
-hc keybind $Mod-Tab         cycle_all +1
+hc keybind Mod1-Tab         cycle_all +1
 hc keybind $Mod-Shift-Tab   cycle_all -1
 hc keybind $Mod-c cycle
 hc keybind $Mod-i jumpto urgent
@@ -134,9 +134,9 @@ hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 hc attr theme.padding_top 4  # space below the title's baseline (i.e. text depth)
 hc attr theme.active.color "$color1"
 hc attr theme.title_color "$color1"
-hc attr theme.normal.color "$color0"
+hc attr theme.normal.color "$color15"
 hc attr theme.urgent.color "$color1"
-hc attr theme.normal.title_color "$color0"
+hc attr theme.normal.title_color "$color15"
 hc attr theme.inner_width 0
 hc attr theme.inner_color black
 hc attr theme.border_width 0
@@ -164,7 +164,7 @@ hc set mouse_recenter_gap 0
 hc unrule -F
 #hc rule class=XTerm tag=3 # move all xterms to tag 3
 hc rule focus=on # normally focus new clients
-hc rule floatplacement=smart
+hc rule floatplacement=center
 #hc rule focus=off # normally do not focus new clients
 # give focus to most common terminals
 #hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on

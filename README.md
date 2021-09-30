@@ -1,8 +1,8 @@
 <h1 align="center">jujey's dotfiles</h1>
 
-- bspwm
+- herbstluftwm
 
-![bspwm](https://i.imgur.com/ubOll1c.png)
+![herbstluftwm](https://i.imgur.com/LSuLVqp.png)
 
 ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 

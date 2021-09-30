@@ -6,7 +6,7 @@
 
 ## [More Screenshots](https://github.com/jujey/dots/blob/master/rice.md)
 
-# Installation
+# Installation (Not currently recommended)
 
 ```
 git clone https://github.com/jujey/dots

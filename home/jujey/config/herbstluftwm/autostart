@@ -13,7 +13,7 @@ hc emit_hook reload
 wal -R &
 picom &
 xsetroot -solid "$color1" &
-unmin.sh &
+unmin &
 
 # remove all existing keybindings
 hc keyunbind --all

@@ -7,7 +7,7 @@ set cursorline
 set mouse=a
 set mouse=n
 set hlsearch
-set spell
+"set spell
 autocmd VimEnter * SoftPencil
 map <C-d> <esc>:set nu<CR>
 map <C-s> <esc>:set nonu<CR>
@@ -31,9 +31,11 @@ call plug#begin('~/local/share/nvim/plugged')
 Plug 'reedes/vim-pencil'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'nessss/vim-gml'
+Plug 'gyim/vim-boxdraw'
 call plug#end()
 
-let g:goyo_width = 80
+let g:goyo_width = 60
 let g:goyo_margin_top = 10
 let g:goyo_margin_bottom = 10
 

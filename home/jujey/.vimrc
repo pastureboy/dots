@@ -3,27 +3,26 @@ set noswapfile
 set guicursor=
 set nuw=1
 syntax on
-set cursorline
 set mouse=a
 set mouse=n
 set hlsearch
 "set spell
 autocmd VimEnter * SoftPencil
-map <C-d> <esc>:set nu<CR>
-map <C-s> <esc>:set nonu<CR>
+map <C-d> <esc>:set relativenumber<CR>
+map <C-s> <esc>:set norelativenumber<CR>
 map <C-a> <esc>ggVG<CR>
 map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>
-
 set laststatus=2
 set statusline+=\ %F\ 
-set statusline+=%#LineNr#
-set statusline+=%#Search#
-set statusline+=\ \ %v\ \ 
 set statusline+=%#Normal#
 set statusline+=%=\ 
 set statusline+=%#PmenuSel#
 set statusline+=\ %p\%%\ 
+set statusline+=%=\ 
+set statusline+=%#LineNr#
+set statusline+=%#Search#
+set statusline+=\ \ %v\ \ 
 set statusline+=%#Todo#
 set statusline+=\ %l\ ->\ %L\ 
 
@@ -32,7 +31,6 @@ Plug 'reedes/vim-pencil'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'nessss/vim-gml'
-Plug 'gyim/vim-boxdraw'
 call plug#end()
 
 let g:goyo_width = 60

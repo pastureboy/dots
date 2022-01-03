@@ -6,7 +6,6 @@ syntax on
 set mouse=a
 set mouse=n
 set hlsearch
-set number
 "set spell
 autocmd VimEnter * SoftPencil
 

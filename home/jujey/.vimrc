@@ -11,14 +11,12 @@ autocmd VimEnter * SoftPencil
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
-hi CursorLineNR ctermfg=white ctermbg=NONE
-hi LineNR ctermfg=grey ctermbg=NONE
-hi CursorLine gui=bold term=bold cterm=bold ctermfg=NONE ctermbg=darkgrey
+highlight LineNr ctermfg=grey
 
 map <C-d> <esc>:set relativenumber<CR> <esc>:set number<CR>
 map <C-s> <esc>:set norelativenumber<CR> <esc>:set nonumber<CR>
 map <C-a> <esc>ggVG<CR>
-map <C-b> <esc>:hi clear CursorLine<CR><esc>:hi CursorLine gui=bold term=bold cterm=bold ctermfg=NONE ctermbg=darkgrey<CR> <esc>:Goyo<CR>
+map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>
 
 set statusline= 

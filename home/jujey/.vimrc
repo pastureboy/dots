@@ -15,18 +15,18 @@ map <C-a> <esc>ggVG<CR>
 map <C-b> <esc>:Goyo<CR>
 map <C-n> <esc>:Limelight!!<CR>
 
-set laststatus=2
-set statusline+=\ %F\ 
-set statusline+=%#Normal#
-set statusline+=%=\ 
-set statusline+=%#PmenuSel#
-set statusline+=\ %p\%%\ 
-set statusline+=%=\ 
-set statusline+=%#LineNr#
-set statusline+=%#Search#
-set statusline+=\ \ %v\ \ 
-set statusline+=%#Todo#
-set statusline+=\ %l\ ->\ %L\ 
+set statusline= 
+set statusline+=%#PmenuSel# 
+set statusline+=%#LineNr# 
+set statusline+=\ %f 
+set statusline+=%m\ 
+set statusline+=%= 
+set statusline+=%#CursorColumn# 
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding} 
+set statusline+=\[%{&fileformat}\] 
+set statusline+=\ %p%% 
+set statusline+=\ %l:%c 
+set statusline+=\ 
 
 call plug#begin('~/local/share/nvim/plugged')
 Plug 'reedes/vim-pencil'

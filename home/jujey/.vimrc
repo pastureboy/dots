@@ -4,6 +4,9 @@ syntax on
 set mouse=a
 set mouse=n
 set hlsearch
+set tabstop=4
+set shiftwidth=0
+set expandtab
 "set spell
 "set cursorline
 colorscheme wal

@@ -1,4 +1,4 @@
-<h1 align="center">jujey's dotfiles</h1>
+<h1 align="center">urze's dotfiles</h1>
 
 - herbstluftwm
 
